@@ -16,6 +16,9 @@ A user enters a number and the application returns all numbers from 1 to the use
 ## Setup/Installation Requirements
 
 1. Clone this repo:
+```
+$ git clone https://github.com/misakimichy/ping-pong-Csharp.git
+```
 
 
 ## Known Bugs
