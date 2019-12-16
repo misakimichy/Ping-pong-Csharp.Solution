@@ -1,31 +1,34 @@
 using System;
+using System.Collections.Generic;
+using MainProgram;
 
-class PingPong
+namespace Pong
 {
-    static void Main()
+    public class PingPong
     {
-        Console.WriteLine("Please enter a number.");
-        string userInput = Console.ReadLine();
-        int inputNumber = int.Parse(userInput);
-
-        for (int i = 1; i < inputNumber; i++)
+        public List<string> IsPingPong(int input)
         {
-            if (i % 3 == 0 && i % 5 == 0)
+            List<string> result = new List<string> {};
+            for (int i = 1; i <= input; i++)
             {
-                Console.WriteLine("ping-pong");
+                if (i % 3 == 0 && i % 5 == 0)
+                {
+                    result.Add("ping-pong");
+                }
+                else if (i % 5 == 0)
+                {
+                    result.Add("pong");
+                }
+                else if (i % 3 == 0 )
+                {
+                    result.Add("ping");
+                }
+                else
+                {
+                    result.Add(i.ToString());
+                }
             }
-            else if (i % 5 == 0)
-            {
-                Console.WriteLine("pong");
-            }
-            else if (i % 3 == 0 )
-            {
-                Console.WriteLine("ping");
-            }
-            else
-            {
-                Console.WriteLine(i);
-            }
+            return result;
         }
     }
 }
