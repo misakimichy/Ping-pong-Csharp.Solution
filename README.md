@@ -25,7 +25,12 @@ A user enters a number and the application returns all numbers from 1 to the use
 
 1. Clone this repo:
 ```
-$ git clone https://github.com/misakimichy/ping-pong-Csharp.git
+$ git clone https://github.com/misakimichy/Ping-pong-Csharp.Solution.git
+```
+
+2. Go into the repo and run this application:
+```
+$ dotnet run
 ```
 
 
