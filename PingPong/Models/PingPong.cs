@@ -1,27 +1,25 @@
-using System;
 using System.Collections.Generic;
-using MainProgram;
 
 namespace Pong
 {
     public class PingPong
     {
-        public List<string> IsPingPong(int input)
+        public static List<string> IsPingPong(int input)
         {
             List<string> result = new List<string> {};
             for (int i = 1; i <= input; i++)
             {
                 if (i % 3 == 0 && i % 5 == 0)
                 {
-                    result.Add("ping-pong");
+                    result.Add("Ping-Pong");
                 }
                 else if (i % 5 == 0)
                 {
-                    result.Add("pong");
+                    result.Add("Pong");
                 }
                 else if (i % 3 == 0 )
                 {
-                    result.Add("ping");
+                    result.Add("Ping");
                 }
                 else
                 {
