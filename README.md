@@ -13,12 +13,14 @@ A user enters a number and the application returns all numbers from 1 to the use
 - All numbers divisible by both 3 and 5 are replaced by "ping-pong".
 
 ## Unit Testing
-| input | Expected Output |
-| :------------- | :------------- |
-| 1 | 1 |
-| 3 | 1, 2, ping |
-| 5 | 1, 2, ping, 4, pong |
-| 15 | 1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, ping-pong |
+| Spec  | input | Expected Output |
+| :------------- | :------------- | :------------- |
+| User input a number | 15 | 1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, ping-pong |
+| User input a negative number | -10 | Invalid Input |
+| User input zero | 0 | Invalid Input |
+| User input a number with decimal points| 1.5 | Invalid Input |
+| User input a word | Hello | Invalid Input |
+
 
 
 ## Setup/Installation Requirements
@@ -41,8 +43,7 @@ $ dotnet run
  misaki.koonce@gmail.com
 
 ## Technologies Used
-_Git, GitHub, C# and .NET Core
-
+_Git, GitHub, C# and MS Test
 
 ## License
 Copyright © 2019 under the MIT License
